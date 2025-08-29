@@ -1,0 +1,603 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(23, 23, 31);
+    font-family: Arial, sans-serif;
+
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*HEADER - NAGŁÓWEK*/
+header {
+    background-color: rgb(30, 30, 30);
+    color: #FFF;
+    font-size: large;
+    height: 20px;
+    padding-top: 10px;
+    padding: 20px 0;
+    position: fixed;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    z-index: 999;
+    text-align: center;
+    
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*NAWIGAJCA - MENU GÓRNE*/
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: background-color 0.4s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #DF9A04;
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*WYSUWANE SUBMENU*/
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 250px;
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Cień */
+    z-index: 999; /* Umiejscowienie nad innymi elementami */
+}
+
+nav ul li {
+    position: relative; /* Ustawienie rodzica jako punktu odniesienia dla submenu */
+}
+
+.submenu li {
+    margin: 1px 0;
+    width: 100%;
+    height: auto;
+}
+
+.submenu li:hover {
+    background-color: #555;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie elementów */
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ŁADNA STRZAŁKA OBOK SUBMENU*/
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 9px;
+    margin-bottom: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*OKIENKO DO WYSZUKIWANIA ALA CTRL + F*/
+#searchBox {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translate(100%,100%);
+    z-index: 999;
+    padding: 10px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#searchInput {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+}
+
+#searchBox button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchBox button:hover {
+    background-color: #777;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/*IKONKA DO WYSZUKIWANIA ALA CTRL + F*/
+
+.search-icon {
+    margin-left: auto;
+    position: relative;
+}
+
+.search-icon i {
+    cursor: pointer;
+}
+.search-icon a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.search-icon a:hover {
+    color: #FFA500;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/*ANIMACJA DO WYSZUKIWANIA ALA CTRL + F*/
+@keyframes slideIn {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/*OKIENKO DO WYSZUKIWANIA ALA CTRL + F*/
+
+input[type="text"] {
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px; 
+    transition: width 0.4s;
+    animation: slideIn 0.4s;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*IKONKI SOCIAL MEDIA W MENU */
+
+.menu-icons a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    float: left;
+    margin-left:10px;
+    
+}
+
+.menu-icons a:hover {
+    color: #FFA500;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*LOGO*/
+.logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*DODATKOWE STYLE DLA OBRAZÓW */
+img {
+
+    height: 30%;
+    margin-left: 30px;
+    width:40%;
+    border-radius: 20px;
+}
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ŁADNE LINIE MIĘDZY BLOKAMI*/
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+    position: relative;
+    margin-right: 5%;
+}
+
+hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: #DF9A04;
+}
+
+
+.highlighted {
+    color: #DF9A04;
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*PARAGRAFY I ZNACZNIKI GŁÓWNE*/
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.video p,
+.rekka p{
+    padding-top: 60px;
+    text-align:left;
+}
+
+
+h2{
+    padding-top: 60px;
+    text-align:left;
+    margin-left: 30px;
+}
+
+.kupowanie1,
+.kupowanie2,
+.opis-kupowanie p,
+.reka1 p,
+.block p,
+.block2 p,
+.block4 p,
+.block3 p,
+.opis-reka p,
+.bindy p,
+.bindy2 p
+{
+    margin-left: 30px;
+
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*TŁO*/
+
+.background {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 1%;
+    z-index: -1;
+}
+
+.left-background {
+    left: 0;
+    background-image: url('left-background.jpg');
+    background-size: cover;
+    width: 15%;
+}
+
+.right-background {
+    right: 0;
+    background-image: url('right-background.jpg');
+    background-size: cover;
+    width: 15%;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*HOVER DO POWIEKSZANIA ZDJEC W BLOKACH*/
+
+
+
+
+
+.block img:hover, 
+.block2 img:hover, 
+.gallery img:hover,
+.bindy1 img:hover,
+.bindy2 img:hover,
+.block3 img:hover,
+.block4 img:hover
+{
+    transform: scale(1.1);
+        transition: transform 0.3s ease;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*KONTENT*/
+
+.content {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    padding: 25px;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ODSTEPY I WYGLAD BLOCKOW 1*/
+
+.reka1,
+.kupowanie1
+{
+    width: 90%;
+    height: 70%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-size: cover;
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ODSTEPY I WYGLAD BLOCKOW 1*/
+.bindy {
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+}
+
+.bindy img{
+    width: 80%;
+}
+
+
+.bindy1,
+.bindy2{
+    width: calc(50% - 20px);
+    float: left;
+    padding: 0;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*GIFY W BINACH.HTML*/
+
+.reka2{
+    position: absolute;
+    width:80%;
+    height: 120%;
+    margin-top: 300px;
+    top:  700px;
+    left: 45%;
+    margin-right: 15%;
+    float: right;
+}
+
+
+
+.kupowanie2{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  2400px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*BINDY1 I BINDY2 - ODNOSNIKI DO BINDOW*/
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*KUPOWANIE I RECE - BLOCKI W BINDY.HTML*/
+
+.kupowanie,
+.rece{
+    padding-top: 60px;
+    text-align:left;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*IKONKI IKONKI Z BOKU STRONY */
+
+.sociale {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    transform: translateY(-50%);
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sociale div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px; 
+    padding: 5px;
+}
+
+.sociale div a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    
+}
+
+.sociale div:hover {
+    border-color: #FFA500;
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+}
+
+.twitch {
+    background-color: #9146ff;
+    border-color: #9146ff;
+}
+
+.steam {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.youtube {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.instagram {
+    background-color: #ff7e76;
+    border-color: #ff7e76;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/* FOOTER I IKONKI SOCIAL MEDIA W FOOTERZE */
+
+
+footer {
+    background-color: black;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+    margin-top: 120px;
+    margin-left:14%;
+    margin-right:15%;
+}
+
+
+.footer-icons a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-icons a:hover {
+    color: #FFA500;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*RESPONSYWNOŚĆ FOOTERA*/
+
+@media only screen and (max-width: 768px) {
+    footer {
+        height: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed; /* Zamieniamy na fixed, aby przycisk był zawsze widoczny na górze strony */
+        top: 20px; /* Ustawiamy na 20px, aby był na samej górze strony */
+        right: 20px; /* Ustawiamy na 20px, aby był na prawej stronie */
+        background: #333; /* Dodajemy tło przyciskowi */
+        border: none;
+        font-size: 28px; /* Zwiększamy rozmiar czcionki */
+        color: #FFF;
+        cursor: pointer;
+        padding: 10px 20px; /* Dodajemy trochę wewnętrznego odstępu */
+        border-radius: 5px; /* Zaokrąglamy narożniki */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Dodajemy cień dla efektu 3D */
+        z-index: 999; /* Ustawiamy wysoki indeks zazębienia, aby był na wierzchu */
+    }
+}
+
+
+
+
+
+
+.active ul {
+        margin: 1px 0;
+    width:220px;
+    display: flex;
+    flex-direction: column;
+    left:-55px;
+    background-color:#555;
+    
+    
+}
+.active li a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+

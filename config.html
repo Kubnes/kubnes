@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotowy Config</title>
+    <link rel="icon" type="image/png" href="img/baner.png">
+    <link rel="stylesheet" href="css/cos.css">
+    <link rel="stylesheet" href="css/kula.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="description" content="Bindy i przydatne komendy do Counter Strike 2 - qbnez config, skins and clips">
+    <script src="js/placek.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/baner.png" alt="Logo">
+        </a>
+    </div>
+    <nav>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="index.html">Strona główna</a></li>
+                <li><a href="bindy.html">Poradniki</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="lineup.html">Granaty</a></li>
+                <li class="has-submenu"><a href="#">qbnez <i class="arrow down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="config.html">Mój config</a></li>
+                        <li><a href="trening.html">Config Treningowy</a></li>
+                    </ul>
+                </li>
+                <div class="social-icons">
+                    <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+                    <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+          <div class="ball"></div>
+          <div class="cursor-dot"></div>
+                    <button class="menu-toggle">☰</button>
+
+<div class="background left-background"></div>
+<div class="background right-background"></div>
+<div class="content">
+<div class="block">
+<h2>Gotowy<span class="highlighted"> Config</span></h2><hr>
+<div class="download-container">
+    <p>Gotowy config możesz pobrać tutaj <a class="download-link" href="cfg/autoexec.cfg" download="autoexec.cfg">Pobierz Config</a></p>
+</div>
+
+        </div>
+        <div class="kodek">
+    </div>
+        <pre>
+            <code>
+                <p>
+                
+                
+//this config was created by qbnez
+// Ostatnia aktualizacja: 14.03.2025
+//Daty aktualizacji: 
+//30.04.2024
+
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//      START CONFIGU - RÓŻNE KOMENDY
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+//clear                      // Wyczyszczenie konsoli przed uruchomieniem configu.
+con_enable          "1"    // Możliwość włączania konsoli. Must have.
+cl_silencer_mode    "1"    // Tryb tłumika [0 - wyłącza ściąganie tłumika, 1 - włącza ściąganie tłumika]
+ui_steam_overlay_notification_position  "bottomright"   // Miejsce powiadomień Steam w CS2. [topleft, topright, bottomleft, bottomright]
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		MYSZKA
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+sensitivity                     "1.15"       // Główna czułość myszki. *
+zoom_sensitivity_ratio          "0.92"         // Czułość myszki podczas celowania z awp/scout.
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		DŹWIĘK
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+volume                          "0.09"      // Ogólna głośność gry. *
+voice_modenable                 "1"         // Komunikacja głosowa w grze. [0 - wyłączona, 1 - włączona]
+snd_voipvolume                  "1"         // Głośność komunikacji głosowej na 100%. *
+snd_mute_losefocus              "1"         // Wyłączenie dźwięków z gry podczas zminimalizowanej gry. [0 - włączenie dźwięku, 1 - wyłączenie dźwięku]
+
+snd_menumusic_volume            "0.03"      // Głośność muzyki w menu.
+snd_roundstart_volume           "0"         // Głośność muzyki na początku rundy.
+snd_mapobjective_volume         "0"         // Głośność muzyki po podłożeniu bomby.
+snd_deathcamera_volume          "0"         // Głośność dźwięku podczas zgonu.
+snd_roundend_volume             "0"         // Głośność muzyki po skończonej rundzie.
+snd_tensecondwarning_volume     "0.10"      // Głośność muzyki, gdy do wybuchu bomby zostanie 10 sekund.
+snd_mvp_volume                  "0.21"      // Głośność muzyki MVP po zakończeniu rundy.
+snd_mute_mvp_music_live_players "0"         // Całkowite wyłączenie muzyki MVP, gdy żyje przeciwnik a runda się zakończy. [0 - włączony, 1 - wyłączony].
+cl_player_ping_mute             "0"         // Głośność dźwięku pingowania pozycji. [0 = włączony, 1 = wyłączony].
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		GRAFIKA
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+fps_max                         "400"     // Maksymalna ilość FPS w grze. *
+fps_max_ui                      "144"     // Maksymalna ilość FPS w menu. Możesz ustawić pod HZ w monitorze. *
+
+r_fullscreen_gamma              "2.5"     // Poziom jasności gry. [Domyślnie 2.2]
+r_player_visibility_mode        "1"       // Kontrast graczy. [0 - wyłącza, 1 - włącza]
+
+cl_ping_fade_distance           "350"     // Odległość w jakiej ping ma zanikać między celownikiem a pingiem. [Standardowo - 300]
+cl_ping_fade_deadzone           "150"     // Odległość w jakiej ping całkowicie znika między celownikiem a pingiem. [Standardowo - 60]
+
+cl_teamid_overhead_mode         "3"       // Pokazywanie nicków przez ściany. [0 - wyłączone, 1 - znacznik,2 - nick,  3 - znacznik, nick i ekwipunek]
+cl_teamid_overhead_colors_show  "1"       // Włączenie kolorowych nicków graczy. [0 - kolor drużyny, 1 - kolor gracza, 2 - kolor gracza i ikona]
+
+engine_low_latency_sleep_after_client_tick true
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		HUD
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+hud_scaling                         "0.851864"  // Skala hudu.
+safezonex                           "1.0"       // Pozycja całego hudu prawo-lewo. [max - 1.0, min 0.1]
+safezoney                           "1.0"       // Pozycja całego hudu góra-dół. [max - 1.0, min 0.1]
+//cl_hud_color                      "7"         // Kolor hudu. [0 - domyślny, 1 - biały, 2 - jasnoniebieski, 3 - ciemnoniebieski, 4 - fioletowy, 5 - czerwony, 6 - pomarańczowy, 7 - żółty, 8 - zielony, 9 - jasnozielony, 10 - różowy, 11 - limonkowy] *
+cl_show_clan_in_death_notice        "1"         // Wyświetlanie nazw grup Steam w killfeed. [0 - wyłączone, 1 - włączone]
+cl_showloadout                      "1"         // Wyświetlanie ikon broni w prawym dolnym rogu. [0 - wyłączone, 1 - włączone]
+cl_hide_avatar_images               "0"         // Wyświetlanie avatarów. [0 - avatary widoczne, 1 - podmienione avatary]
+cl_allow_animated_avatars           "1"         // Ruchome avatary na steam w grze [0 - wyłączone, 1 - włączone]
+cl_sanitize_player_names            "0"         // Wyświetlanie nicków graczy. [0 - włączone, 1 - wyłączone]
+cl_sanitize_muted_players           "0"         // Ukrywanie nikców często zgłaszanych graczy. [0 - odkryte, 1 - ukryte]
+cl_showfps                          "0"         // Wyświetlanie ilości FPS w lewym górnym rogu. [0 - wyłączone, 1 - włączone]. Polecam korzystać z wyświetlania FPS w ustawieniach Steam - zakładka "W grze".
+cl_autohelp                         "1"         // Wyświetlanie powiadomień o zmianie trybu strzelania w glocku i famasie. [1 - włączone, 0 - wyłączone]
+gameinstructor_enable               "0"         // Pokazywanie podpowiedzi w grze dla początkujących. [1 - włączone, 0 - wyłączone]
+cl_scoreboard_mouse_enable_binding  "+attack2"  // Przycisk, który ma aktywować kursor w konsoli. Standardowo +attack2 czyli prawy myszy.
+r_show_build_info                   "0"         // Info o ostatnim update bety
+
+// Ustawienia menu zakupów
+cl_use_opens_buy_menu               "1"         // Wyłącza możliwość kupowania broni przyciskiem "E" (+use) Wyłączając komendę możemy podnieść broń na spawnie.
+cl_buywheel_nonumberpurchasing      "0"         // Kupowanie broni numerkami na klawiaturze. [0 - włącza, 1 - wyłącza]
+cl_buywheel_donate_key              "0"         // Przycisk kupowania broni dla członków drużyny. [0 - lewy ctrl, 1 - lewy alt, 2 - lewy shift]
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+// Ustawienia Radaru
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+cl_hud_radar_scale                  "1.15"      // Powiększa radar.
+cl_radar_icon_scale_min             "0.9"       // Wielkość ikonek graczy na radarze.
+cl_radar_always_centered            "0"         // Wyłącza czarne tło wokół radaru, dzięki temu więcej widać na mapie.
+cl_radar_rotate                     "1"         // Włącza obracanie się radaru.
+cl_radar_scale                      "0.4"       // Skala mapy na radarze.
+cl_radar_square_with_scoreboard     "1"         // Radar zmienia się w kwadrat podczas włączonego "TAB".
+//
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		MODEL BRONI
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+viewmodel_presetpos               "0"           // Klasyczna pozycja broni. Koniecznie użyj 0, jeśli chcesz zmienić poniższe komendy.
+viewmodel_fov                     "68"          // FOV Broni.
+viewmodel_offset_z                "-1.5"        // Pozycja broni góra/dół.
+viewmodel_offset_x                "2.5"         // Pozycja broni prawo/lewo.
+viewmodel_offset_y                "2"           // Pozycja broni przód/tył.
+
+
+
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		NÓŻ LEWA RĘKA CS:GO - NIE DZIAŁA
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//CSGO
+//bind "0" "slot10; cl_righthand 1"
+//bind "2" "slot1; cl_righthand 1"
+//bind "mouse4" "slot2; cl_righthand 1"
+//bind "mouse5" "slot3; cl_righthand 0"
+//bind "4" "slot4; cl_righthand 1"
+//bind "5" "slot5; cl_righthand 1"
+//bind "6" "slot6; cl_righthand 1"
+//bind "7" "slot7; cl_righthand 1"
+//bind "8" "slot8; cl_righthand 1"
+//bind "9" "slot9; cl_righthand 1"
+
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		NOŻYK W LEWEJ ŁAPCE
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+
+bind 2 "slot1;switchhandsright"
+
+bind mouse5 "slot3;switchhandsleft"
+
+bind mouse4 "slot2;switchhandsright"
+
+bind 4 "slot4;switchhandsright"
+
+bind 5 "slot5;switchhandsright"
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		CELOWNIK *
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+//apply_crosshair_code CSGO-FaJMj-YGc9Z-V7py8-fp6Wz-oVGOP
+
+//CSGO-azjiz-c3S52-9TyUo-EnDGY-23SKF -> big, long, blue, style 4
+//CSGO-pDJ8y-XrWUq-yS8U7-p529z-hwDmQ -> small, blue, moving
+//CSGO-pqTiO-3dvyr-yYJN7-keVd5-hHwzF-> waski, niebieski, ruszajacy
+//CSGO-JN6Go-7Anrm-WRzOW-M97Jt-ZTzfF -> bialy, style 4, wiekszy gap
+//CSGO-Zf6PX-ZR2dQ-x2wQU-MMBot-9nybE -> żółty, classic, ruszający
+//CSGO-RNH8h-unZ3s-9YQQC-cyXkA-HsuCQ -> zolty duzy style 4
+//CSGO-FaJMj-YGc9Z-V7py8-fp6Wz-oVGOP -> waskie niebieski bez kropki style 4
+
+cl_crosshair_recoil               "0"           // Podążanie celownika za recoilem. [0 - Wyłącza 1 - Włącza]
+cl_crosshair_sniper_width         "1"           // Grubsze linie celownika w AWP.
+cl_show_observer_crosshair        "2"           // Wyświetlanie celowników innych graczy. [0 - wyłączony, 1 - znajomi, 2 - wszyscy]
+cl_crosshair_friendly_warning     "0"           // Wyświetla kółko ostrzegawcze, gdy namierzymy na członka drużyny.
+hud_showtargetid                  "1"           // Wyświetlanie nicku przeciwnika na którego namierzamy.
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//		ŁĄCZE, SERWERY, MATCHMAKING
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+rate                                    "196608"    // * Wartość rate
+
+cl_join_advertise                       "2"         // Możliwość dołączania do Twojej gry przez znajomych. [0 - tylko zaproszenie, 1 - tylko do serwerów oficjalnych, 2 - serwery oficjalne oraz społeczności]
+cl_invites_only_friends                 "0"         // Gdy ustawione na 1, tylko znajomi będą mogli zaprosić cię gry. Ustawienie 0 zezwala na zaproszenia od wszystkich.
+cl_mute_all_but_friends_and_party       "0"         // Wyłączenie komunikacji z graczami poza znajomymi i członkami lobby
+cl_mute_enemy_team                      "0"         // Blokowanie komunikacji z graczami z przeciwnej drużyny. [0 - komunikacja włączona, 1 - komunikacja wyłączona]
+cl_clanid                               "0"         // Grupa Steam w tabeli.
+
+mm_dedicated_search_maxping             "60"        // Maksymalny ping na MM podczas wyszukiwania meczu.
+mm_csgo_community_search_players_min    "3"         // Ustala ile minimalnie ma być graczy na serwerze Valve podczas szukania serwera. Dzięki temu nie dołączymy do serwera gdzie są same boty.
+spec_replay_autostart                   "0"         // Automatyczne pokazywanie powtórki po zgonie. [0 - wyłączone, 1 - włączone]
+cl_color                                "0"         // Preferowany kolor gracza w trybie turniejowym. [0 - niebieski, 1 - zielony, 2 - żółty, 3 - pomarańczowy, 4 - fioletowy] *
+cl_dm_buyrandomweapons                  "0"         // Wyłączenie losowych broni na DM Valve.
+player_nevershow_communityservermessage "0"         // Wyłącza okno z informacjami o serwerach społeczności.
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//                     BINDY
+//  Aby włączyć dany bind usuń znak // przed bind i alias
+//  Aby wyłączyć dany bind dodaj znak // przed bind lub usuń linijkę
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//      PODSTAWOWE BINDY
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+// PORUSZANIE SIĘ
+bind "W"            "+forward"              // Ruch do przodu
+bind "S"            "+back"                 // Ruch do tyłu
+bind "A"            "+left"                 // Ruch w lewo
+bind "D"            "+right"                // Ruch w prawo 
+bind "SPACE"        "+jump"                 // Skok
+bind "SHIFT"        "+sprint"               // Chodzenie po cichu
+bind "q"            "+duck"                 // Kucanie
+
+// WYBÓR BRONI
+bind "2" "slot1;switchhandsright"             // GŁówna broń
+bind "mouse5" "slot3;switchhandsleft"         // Pistolety
+bind "mouse4" "slot2;switchhandsright"        // Nóż
+bind "4" "slot4;switchhandsright"             // Granaty
+bind "5" "slot5;switchhandsright"             // C4, strzykawka
+bind "6"            "slot6"                 // Granat wybuchający
+bind "7"            "slot7"                 // Flashbang
+bind "8"            "slot8"                 // Granat dymny
+bind "9"            "slot9"                 // Wabik
+bind "0"            "slot10"                // Mołotow, zapalajacy
+
+// MYSZKA
+bind "MOUSE1"       "+attack"               // Strzał, podkładanie paki
+bind "MOUSE2"       "+attack2"              // Scope, tłumik i burst
+bind "MOUSE3"       "player_ping"           // Pingowanie pozycji
+bind "MWHEELUP"     "+jump"                 // Skok na scrollu. Domyślnie: invprev
+bind "MWHEELDOWN"   "+jump"                 // Skok na scrollu.
+
+bind "mouse_x"      "yaw"                   // Poruszanie myszką oś X
+bind "mouse_y"      "pitch"                 // Poruszanie myszką oś Y
+
+// Różne
+bind "="            "toggleconsole"         // Włączenie konsoli
+
+bind "TAB"          "+showscores"           // Tabela wyników
+bind "E"            "+use"                  // Rozbrajanie paki, otwieranie drzwi, naciskanie przycisków
+bind "R"            "+reload"               // Przeładowanie broni
+bind "V"            "+spray_menu"           // Menu grafitti
+bind "Y"            "messagemode"           // Wiadomość do wszystkich
+bind "U"            "messagemode2"          // Wiadomość do drużyny
+
+bind "F"            "+lookatweapon"         // Podgląd broni
+bind "G"            "drop"                  // Wyrzucenie broni
+
+bind "Z"            "radio2"                // Podstawowe menu radia.
+bind "T"            "+voicerecord"          // Rozmowa na czacie głosowym
+bind "B"            "buymenu"               // Zakup broni
+bind "M"            "teammenu"              // Menu z wyborem drużyny
+bind "C"            "noclip"                // Latanie po mapie podczas treningu.
+bind "k" "say :)"
+bind "p" "say  russia = ukraine = belarus. Same shit"
+
+// BINDY NA KUPOWANIE
+bind "DOWNARROW" "buy ak47; buy m4a1_silencer"
+bind "rightarrow" " buy flashbang;buy smokegrenade;buy incgrenade;buy molotov; buy hegrenade"
+bind "leftarrow" "buy deagle"
+bind "uparrow" "buy vesthelm"
+bind "F10" "buy smokegrenade; buy flashbang; buy p250"
+bind "F6" "buy smokegrenade; buy flashbang; buy deagle; buy vesthelm"
+
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//      SPECJALNE BINDY
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+// SZYBKIE WYRZUCANIE BOMBY
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+alias "+dropb" "slot3; slot5;"
+alias "-dropb" "drop; playerchatwheel CW.droppedbomb #Chatwheel_droppedbomb"
+bind "J" "+dropb"
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+// WYŻSZY SKOK - Łatwiej wskakiwać na skrzynki na mirage.
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+//alias "+hjump" "+jump; +duck";
+//alias "-hjump" "-jump; -duck";
+//bind  "X"  "+hjump"
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+// JUMPTHROW PO NACIŚNIĘCIU ALTA - NIE DZIAŁA
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+// alias "+jumpaction" "+jump;"
+// alias "+throwaction" "-attack; -attack2"
+// alias "-jumpaction" "-jump"
+// bind ALT "+jumpaction;+throwaction;"
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+// JUMPTHROW PO NACIŚNIĘCIU ALTA - NIE DZIAŁA
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+alias +muteh "unbind alt"
+alias -muteh "bind alt +jumpthrow"
+
+alias revert "bind mouse_x yaw"
+alias combo "-jump;revert;-muteh"
+alias +jumpthrow "+jump"
+alias -jumpthrow "-attack;+muteh;bind mouse_x combo"
+
+bind ALT +jumpthrow
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+// VOLUME UP PODCZAS CICHEGO CHODZENIA
+// DOMYŚLNIE: bind "shift" "+sprint"
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+//                  SKRÓTY KOMEND
+// ⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃⁃
+
+alias   "dc"          "disconnect"  
+alias   "exit"        "quit"                                    // Wyjście z gierki
+alias   "s"           "status"                                  // Wyświetla status w konsoli - ip serwera, listę graczy itp.
+alias   "c"           "clear"                                   // Czyści konsole
+alias   "shield"      "ui_vanitysetting_loadoutslot_t heavy5"   // Postać w menu dostaje tarczę.
+alias   "sd"          "ent_fire smokegrenade_projectile kill; ent_fire decoy_projectile kill; stopsound;" // Usuwanie smoke i decoy na serwerze lokalnym z sv_cheats 1
+alias   "e"           "sv_cheats 1; bot_kick; mp_freezetime 0; mp_team_intro_time 0; mp_restartgame 1; mp_warmup_end; mp_ignore_round_win_conditions 1;" // Przygotowanie do gry na pustym serwerze
+
+//  Szybkie dawanie broni na serwerze lokalnym z sv_cheats 1
+//  Nie trzeba wpisywać w konsoli give weapon_nazwabroni, wystarczy wpisać tylko jej nazwe.
+alias "ak"          "give weapon_ak47"
+alias "m4"          "give weapon_m4a1"
+alias "m4s"         "give weapon_m4a1_silencer"
+alias "m4a1"        "give weapon_m4a1_silencer"
+alias "galil"       "give weapon_galilar"
+alias "famas"       "give weapon_famas"
+alias "aug"         "give weapon_aug"
+alias "sg"          "give weapon_sg556"
+alias "tec"         "give weapon_tec9"
+alias "fiveseven"   "give weapon_fiveseven"
+alias "cz"          "give weapon_cz75a"
+alias "beretki"     "give weapon_elite"
+alias "dual"        "give weapon_elite"
+alias "p2000"       "give weapon_hkp2000"
+alias "usp"         "give weapon_usp_silencer"
+alias "glock"       "give weapon_glock"
+alias "deagle"      "give weapon_deagle"
+alias "p250"        "give weapon_p250"
+alias "mp9"         "give weapon_mp9"
+alias "mac10"       "give weapon_mac10"
+alias "uzi"         "give weapon_mac10"
+alias "mp7"         "give weapon_mp7"
+alias "bizon"       "give weapon_bizon"
+alias "ump"         "give weapon_ump45"
+alias "mag7"        "give weapon_mag7"
+alias "swag7"       "give weapon_mag7"
+alias "mp5"         "give weapon_mp5sd"
+alias "sawedoff"    "give weapon_sawedoff"
+alias "sawnoff"     "give weapon_sawedoff"
+alias "soff"        "give weapon_sawedoff"
+alias "sawed"       "give weapon_sawedoff"
+alias "sawn"        "give weapon_sawedoff"
+alias "nova"        "give weapon_nova"
+alias "xm"          "give weapon_xm1014"
+alias "xm1014"      "give weapon_xm1014"
+alias "awp"         "give weapon_awp"
+alias "scout"       "give weapon_ssg08"
+alias "scar"        "give weapon_scar20"
+alias "scar20"      "give weapon_scar20"
+alias "g3"          "give weapon_g3sg1"
+alias "c4"          "give weapon_c4"
+alias "negev"       "give weapon_negev"
+alias "m249"        "give weapon_m249"
+alias "rev"         "give weapon_revolver"
+
+// Granaty
+alias "flash"       "give weapon_flashbang"
+alias "nade"          "give weapon_hegrenade"
+alias "smoke"       "give weapon_smokegrenade"
+alias "molo"        "give weapon_molotov"
+alias "decoy"       "give weapon_decoy"
+alias "snowball"    "give weapon_snowball"
+alias "tag"         "give weapon_tagrenade"
+
+// Szybkie włączanie mapy z botami poprzez wpisanie jej nazwy bez "de_"
+alias "anubis"      "map de_anubis"
+alias "ancient"     "map de_ancient"
+alias "mirage"      "map de_mirage"
+alias "nuke"        "map de_nuke"
+alias "aztec"       "map de_aztec"
+alias "cache"       "map de_cache"
+alias "cobble"      "map de_cbble"
+alias "dust"        "map de_dust"
+alias "dust2"       "map de_dust2"
+alias "inferno"     "map de_inferno"
+alias "overpass"    "map de_overpass"
+alias "train"       "map de_tain"
+alias "vertigo"     "map de_vertigo"
+
+
+// Informacja w konsoli o tym, że autoexec został pomyślnie załadowany.
+// Brak tego napisu w konsoli po włączeniu CS:GO oznacza, że config się nie załadował.
+echo ""
+echo "+-------------------------------------------------------------------------+"
+echo "|                              QBNEZ CONFIG                               |"
+echo "+-------------------------------------------------------------------------+"
+echo ""
+echo "* Plik konfiguracjny autoexec został pomyślnie wczytany."
+echo ""
+
+
+
+
+host_writeconfig
+
+
+
+</p>
+</code>
+    </pre>
+
+    </div>
+
+<!--<aside class="sociale">
+    <div class="twitch">
+        <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+        <span>Twitch</span>
+    </div>
+    <div class="steam">
+        <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+        <span>Steam</span>
+    </div>
+    <div class="youtube">
+        <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+        <span>YouTube</span>
+    </div>
+    <div class="instagram">
+        <a href="www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+        <span>Instagram</span>
+    </div>
+</aside>-->
+
+
+
+
+<div id="chatbot-container">
+    <button id="chatbot-btn">
+        <img src="img/baner.png" alt="Bot Profile Picture" class="bot-profile-pic">
+        Bot Kubnes
+    </button>
+    <div id="chatbot" class="chatbot-window" style="display: none;">
+        <div class="chatbot-header">
+            <img src="img/baner.png" alt="Bot Profile Picture" class="bot-profile-pic">
+            <span>Bot Kubnes</span>
+            <span class="close-chatbot">X</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+        </div>
+        <div class="chatbot-options">
+            <button class="option-btn" data-response="Co to jest autoexec i jak go używać?">Co to jest autoexec i jak go używać?</button>
+            <button class="option-btn" data-response="Co to jest config?">Co to jest config?</button>
+            <button class="option-btn" data-response="Jak mogę pobrać config do CS2?">Jak mogę pobrać config do CS2?</button>
+            <button class="option-btn" data-response="Pogubiłem się! Nie wiem gdzie co znaleźć">Pogubiłem się! Nie wiem gdzie co znaleźć</button>
+            <button class="option-btn" data-response="Gdzie mogę znaleźć więcej informacji?">Gdzie mogę znaleźć więcej informacji?</button>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-icons">
+        <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+        <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+        <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 kubnes.zsti.me. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+    <script src="js/bar.js"></script>
+    <script src="js/dot.js"></script>
+    <script src="js/bot.js"></script>
+</body>
+</html>

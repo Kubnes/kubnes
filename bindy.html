@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poradniki</title>
+    <link rel="icon" type="image/png" href="img/baner.png">
+    <link rel="stylesheet" href="css/cos.css">
+    <link rel="stylesheet" href="css/kula.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="description" content="Bindy i przydatne komendy do Counter Strike 2 - qbnez config, skins and clips">
+
+
+</head>
+<body>
+
+<header>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/baner.png" alt="Logo">
+        </a>
+    </div>
+    <nav>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="index.html">Strona główna</a></li>
+                <li><a href="bindy.html">Poradniki</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="lineup.html">Granaty</a></li>
+                <li class="has-submenu"><a href="#">qbnez <i class="arrow down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="config.html">Mój config</a></li>
+                        <li><a href="trening.html">Config Treningowy</a></li>
+                    </ul>
+                </li>
+                <div class="social-icons">
+                    <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+                    <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    
+<div class="ball"></div>
+<div class="cursor-dot"></div>
+
+
+<div class="background left-background"></div>
+<div class="background right-background"></div>
+<div class="content">
+        <div class="bindy">
+    <h2>Przydatne <span class="highlighted"> bindy</span></h2><hr>
+<div class="bindy1">
+        <p>Bindy na zmianę ręki</p>
+<img class="zoomable-image" src="img/switch.jpg" onclick="scrollToElement('.rece');">
+
+
+
+
+   
+</div>
+<div class="bindy2">
+    <p>Bindy na kupowanie</p>
+<img class="zoomable-image" src="img/kupowanie.jpg" onclick="scrollToElement('.kupowanie');">
+</div>
+<div class="bindy3">
+    <p>Komendy Na Celowniki</p>
+<img class="zoomable-image" src="img/celownik.jpg" onclick="scrollToElement('.celowniki');">
+</div>
+
+
+
+<div class="bindy4">
+    <p>Bindy na jumpthrow</p>
+<img class="zoomable-image" src="img/skok.jpg" onclick="scrollToElement('.jumpthrow');">
+</div>
+
+<div class="bindy5">
+    <p>Lineupy</p>
+<a href="lineup.html">
+                <img class="zoomable-image" src="img/lineup.jpg" alt="Lineupy">
+            </a>
+</div>
+
+<div class="bindy6">
+    <p>W trakcie prac</p>
+<a href="lineup.html">
+                <img class="zoomable-image" src="img/lineup.jpg" alt="Lineupy">
+            </a>
+</div>
+</div>
+</div>
+
+
+
+        <div class="rece">
+    <h2>Zmiana <span class="highlighted"> ręki</span></h2><hr>
+<div class="reka1">
+        <p>Komenda: </p>
+     
+    <div class = "opis-reka">
+<span class="highlighted"><h2> "Swtichhands"</h2></span>
+
+<p>Bind na zmianę ręki pod przycisk: </p>
+<span class="highlighted"><h2>bind "klawisz" "swtichhands"</h2></span>
+
+<p>Allias na nóż w lewej ręcę: 
+
+<pre>
+<code>
+    <p>
+
+bind 2 "slot1;switchhandsright"
+
+bind mouse5 "slot3;switchhandsleft"
+
+bind mouse4 "slot2;switchhandsright"
+
+bind 4 "slot4;switchhandsright"
+
+bind 5 "slot5;switchhandsright"
+</p>
+</code>
+</pre>
+
+   </div>
+   <div class="reka2">
+        <img src="img/reka.gif">
+</div>
+</div>
+</div>
+
+        <div class="kupowanie">
+    <h2>Bindy na <span class="highlighted"> kupowanie</span></h2><hr>
+<div class="kupowanie1">
+    <p>Bind na przypisanie klawisza do przedmiotu: </p>
+    <div class = "opis-kupowanie">
+
+<span class="highlighted"><h2>bind "klawisz" "buy przedmiot"</h2></span>
+
+<p>Bind na przypisanie więcej przedmiotów: </p>
+<span class="highlighted"><h2>bind "klawisz" "buy przedmiot;buy przedmiot"</h2></span>
+
+<p>Przykładowe bindy na kupowanie: </p>
+
+<p>
+<pre>
+<code>
+    <p>
+bind "DOWNARROW" "buy ak47; buy m4a1_silencer"                                          
+bind "rightarrow" " buy flashbang;buy smokegrenade;buy incgrenade;buy molotov; buy hegrenade" 
+bind "leftarrow" "buy deagle"                                                             
+bind "uparrow" "buy vesthelm"        
+bind "F10" "buy smokegrenade; buy flashbang; buy p250"
+bind "F6" "buy smokegrenade; buy flashbang; buy deagle; buy vesthelm"
+</p>
+</code>
+</pre>
+
+   </div>
+   <div class="kupowanie2">
+        <img src="img/kupowanie.gif">
+</div>
+</div>
+</div>
+
+
+
+
+        <div class="celowniki">
+    <h2>Komendy <span class="highlighted"> Na Celowniki</span></h2><hr>
+<div class="celowniki1">
+    <p>Komendy do edytowania celownika: </p>
+    <div class = "opis-celowniki">
+
+<span class="highlighted"><h2>cl_crosshaircolor</h2></span>
+<p class="description">Zmienia kolor celownika</p>
+
+<span class="highlighted"><h2>cl_crosshairsize</h2></span>
+<p class="description">Ustala rozmiar celownika. Domyślna wartość to 5</p>
+
+<span class="highlighted"><h2>cl_crosshairstyle 1-5</h2></span>
+<p class="description">Ustawia rodzaj celownika5</p>
+
+ <span class="highlighted"><h2>cl_crosshairthickness</h2></span>
+  <p class="description">dostosowuje grubość celownika</p>
+
+ <span class="highlighted"><h2>cl_crosshairgap</h2></span>
+  <p class="description">Zmienia odległość pomiędzy kreskami celownika.</p>
+
+
+
+   </div>
+<!--    <div class="celowniki2">
+     <img src="img/kupowanie.gif" class="zdjecie zdjecie1">
+     <img src="img/kupowanie.gif" class="zdjecie zdjecie2">
+     <img src="img/kupowanie.gif" class="zdjecie zdjecie3">
+     <img src="img/kupowanie.gif" class="zdjecie zdjecie4">
+     <img src="img/kupowanie.gif" class="zdjecie zdjecie5">
+</div> -->
+</div>
+</div>
+
+
+
+
+
+
+        <div class="jumpthrow">
+    <h2>Bind na <span class="highlighted"> jumpthrow</span></h2><hr>
+<div class="skok1">
+
+     
+    <div class = "opis-skok">
+
+<p>Bind na jumpthrow pod ALT</p>
+
+
+<pre>
+<code>
+    <p>
+alias +muteh "unbind alt"
+alias -muteh "bind alt +jumpthrow"
+
+alias revert "bind mouse_x yaw"
+alias combo "-jump;revert;-muteh"
+alias +jumpthrow "+jump"
+alias -jumpthrow "-attack;+muteh;bind mouse_x combo"
+
+bind ALT +jumpthrow
+</p>
+</code>
+
+</pre>
+
+   </div>
+   
+</div>
+</div>
+
+
+
+
+<!--<aside class="sociale">
+    <div class="twitch">
+        <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+        <span>Twitch</span>
+    </div>
+    <div class="steam">
+        <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+        <span>Steam</span>
+    </div>
+    <div class="youtube">
+        <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+        <span>YouTube</span>
+    </div>
+    <div class="instagram">
+        <a href="www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+        <span>Instagram</span>
+    </div>
+</aside>-->
+
+
+<div id="chatbot-container">
+    <button id="chatbot-btn">
+        <img src="img/baner.png" alt="Bot Profile Picture" class="bot-profile-pic">
+        Bot Kubnes
+    </button>
+    <div id="chatbot" class="chatbot-window" style="display: none;">
+        <div class="chatbot-header">
+            <img src="img/baner.png" alt="Bot Profile Picture" class="bot-profile-pic">
+            <span>Bot Kubnes</span>
+            <span class="close-chatbot">X</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+        </div>
+        <div class="chatbot-options">
+            <button class="option-btn" data-response="Co to jest autoexec i jak go używać?">Co to jest autoexec i jak go używać?</button>
+            <button class="option-btn" data-response="Co to jest config?">Co to jest config?</button>
+            <button class="option-btn" data-response="Jak mogę pobrać config do CS2?">Jak mogę pobrać config do CS2?</button>
+            <button class="option-btn" data-response="Pogubiłem się! Nie wiem gdzie co znaleźć">Pogubiłem się! Nie wiem gdzie co znaleźć</button>
+            <button class="option-btn" data-response="Gdzie mogę znaleźć więcej informacji?">Gdzie mogę znaleźć więcej informacji?</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-icons">
+        <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+        <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+        <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 kubnes.zsti.me. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash === "#kupowanie") {
+        var receDiv = document.querySelector(".kupowanie");
+        if (receDiv) {
+            receDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash === "#rece") {
+        var receDiv = document.querySelector(".rece");
+        if (receDiv) {
+            receDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+});
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash === "#celowniki") {
+        var receDiv = document.querySelector(".celowniki");
+            receDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+    
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.hash === "#skok1") {
+        var receDiv = document.querySelector(".skok1");
+        if (receDiv) {
+            receDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+});
+</script>
+<script src="js/bot.js"></script>
+<script src="js/script.js"></script>
+<script src="js/skip.js"></script>
+<script src="js/skipek2.js"></script>
+<script src="js/placek.js"></script>
+<script src="js/bar.js"></script>
+<script src="js/dot.js"></script>
+
+
+
+
+
+</body>
+</html>

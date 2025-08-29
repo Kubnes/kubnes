@@ -1,0 +1,18 @@
+<!-- <aside class="sociale">
+    <div class="twitch">
+        <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+        <span>Twitch</span>
+    </div>
+    <div class="steam">
+        <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+        <span>Steam</span>
+    </div>
+    <div class="youtube">
+        <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+        <span>YouTube</span>
+    </div>
+    <div class="instagram">
+        <a href="www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+        <span>Instagram</span>
+    </div>
+</aside> -->

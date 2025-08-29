@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="icon" type="image/png" href="img/baner.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="description" content="Bindy i przydatne komendy do Counter Strike 2 - qbnez config, skins and clips">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/baner.png" alt="Logo">
+    </div>
+    <nav>
+    <div class="menu">
+        <ul>
+            <li class="active"><a href="index.html">Strona główna</a></li>
+            <li><a href="bindy.html">Poradniki</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li class="has-submenu"><a href="#">qbnez <i class="arrow down"></i></a>
+                <ul class="submenu">
+                    <li><a href="config.html">Config</a></li>
+                    <li><a href="trening.html">Config Treningowy</a></li>
+                    <li><a href="achievements.html">Osiągnięcia</a></li>
+                </ul>
+            </li>
+
+            <li class="search-icon"><a href="#" onclick="openSearchBox()"><i class="fas fa-search"></i></a></li>
+
+
+        </ul>
+        </div>
+    </nav>
+</header>
+          <button class="menu-toggle">☰</button>
+
+<div class="background left-background"></div>
+<div class="background right-background"></div>
+
+<div class="content">
+    <div class="blocks">
+        <h2>Przydatne <span class="highlighted">Configi</span></h2>
+        <hr>
+        
+        <div class="block">
+            <p>Gotowy config do wgrania</p>
+            <a href="config.html">
+                <img class="zoomable-image" src="img/m4.jpg" alt="Config">
+            </a>
+            <hr>
+        </div>
+        <div class="block2">
+            <p>Gotowy config do treningów</p>
+                        <hr>
+            <a href="trening.html">
+                <img class="zoomable-image" src="img/smoke.jpg" alt="Config Treningowy">
+            </a>
+            <hr>
+        </div>
+        <div class="block3">
+            <p>Bind na zmianę ręki</p>
+            <img class="zoomable-image" src="img/switch.jpg" alt="Bind" onclick="scrollToElementOnAnotherPage('bindy.html', '.rece');">
+                        <hr>
+        </div>
+        <div class="block4">
+            <p>Bind na zmianę ręki</p>
+            <img class="zoomable-image" src="img/kupowanie.jpg" alt="Bind" onclick="scrollToElementOnAnotherPage('bindy.html', '.rece');">
+                        <hr>
+        </div>
+        
+    </div>
+
+    <div class="video">
+        <h2>Filmik <span class="highlighted">YouTube</span></h2>
+        <hr>
+        <p>Krótka kompilacja moich fragów</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/ggdeqK25_pM?si=OZ5E7BUVs0Icyq0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+<h2>Galeria <span class="highlighted">Skinów</span></h2>
+<hr>
+<div class="gallery">
+    <div class="row">
+        <img src="img/photo1.jpg" class="knife" alt="Survival Knife">
+        <img src="img/photo2.jpg" class="knife" alt="Flip Knife">
+        <img src="img/photo3.jpg" class="knife" alt="Talon Knife">
+    </div>
+    <div class="row">
+        <img src="img/photo1.jpg" class="knife" alt="Knife 4">
+        <img src="img/photo2.jpg" class="knife" alt="Knife 5">
+        <img src="img/photo3.jpg" class="knife" alt="Knife 6">
+    </div>
+</div>
+</div>
+
+
+<footer>
+    <div class="footer-icons">
+        <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+        <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+        <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 kubnes.zsti.me. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<div id="searchBox" class="search-box">
+    <form id="searchForm" onsubmit="performSearch(); return false;">
+        <input type="text" id="searchInput" placeholder="Wpisz tekst do wyszukania">
+        <button type="submit">Szukaj</button>
+        <button type="button" onclick="closeSearchBox()">Anuluj</button>
+    </form>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/skipek.js"></script>
+<script src="js/skipek2.js"></script>
+<script src="js/placek.js"></script>
+
+
+
+
+</body>
+</html>

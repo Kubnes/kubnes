@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="icon" type="image/png" href="img/baner.png">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="css/kula.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="description" content="Bindy i przydatne komendy do Counter Strike 2 - qbnez config, skins and clips">
+    <script src="js/placek.js"></script>
+    <style>
+        .contact-container {
+            max-width: 700px;
+            margin-left: 330px;
+            margin-top: 120px;
+            text-align: center;
+            padding: 20px;
+            background: #222222;
+            border-radius: 20px;
+            border: 2px #3b3b3b solid;
+        }
+
+        .profile-section {
+            margin-bottom: 30px;
+        }
+
+         .profile-img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          border: 3px solid #DF9A04;
+          box-shadow: 0 0 10px #ffcc00;
+          background-image: url('twoje-logo.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #222222;
+        }
+
+
+        .nickname {
+            color: white;
+            padding-top: 20px;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-left: 310px;
+            font-weight: bold;
+        }
+
+        .link-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-tile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #111;
+            border: 1px solid #333;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .link-tile i {
+            font-size: 20px;
+        }
+
+        .link-tile span {
+            flex-grow: 1;
+            margin-left: 10px;
+            text-align: left;
+        }
+
+        .link-tile .icon-right {
+            margin-left: auto;
+            opacity: 0.6;
+        }
+
+        .link-tile:hover {
+            background-color: #222;
+            border-color: #DF9A04;
+            transform: scale(1.02);
+            box-shadow: 0 0 10px #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/baner.png" alt="Logo">
+        </a>
+    </div>
+    <nav>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="index.html">Strona główna</a></li>
+                <li><a href="bindy.html">Poradniki</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="lineup.html">Granaty</a></li>
+                <li class="has-submenu"><a href="#">qbnez <i class="arrow down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="config.html">Mój config</a></li>
+                        <li><a href="trening.html">Config Treningowy</a></li>
+                    </ul>
+                </li>
+                <div class="social-icons">
+                    <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+                    <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="ball"></div>
+<div class="cursor-dot"></div>
+
+<div class="background left-background"></div>
+<div class="background right-background"></div>
+
+<div class="content">
+    <div class="contact-container">
+        <!-- Logo i nick -->
+        <div class="profile-section">
+            <img src="img/baner.png" alt="Logo" class="profile-img">
+            <h2 class="nickname">qbnez</h2>
+        </div>
+
+        <!-- Kafelki z linkami -->
+        <div class="link-buttons">
+            <a href="https://www.twitch.tv/kubnes_" class="link-tile" target="_blank">
+                <i class="fab fa-twitch"></i>
+                <span>Twitch</span>
+                <i class="fas fa-external-link-alt icon-right"></i>
+            </a>
+            <a href="https://steamcommunity.com/profiles/76561198977240779/" class="link-tile" target="_blank">
+                <i class="fab fa-steam"></i>
+                <span>Steam</span>
+                <i class="fas fa-external-link-alt icon-right"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" class="link-tile" target="_blank">
+                <i class="fab fa-youtube"></i>
+                <span>YouTube</span>
+                <i class="fas fa-external-link-alt icon-right"></i>
+            </a>
+            <a href="https://www.instagram.com/kubnes1" class="link-tile" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+                <i class="fas fa-external-link-alt icon-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="chatbot-container">
+    <button id="chatbot-btn">
+        <img src="img/baner.png" alt="Bot Profile Picture" class="bot-profile-pic">
+        Bot Kubnes
+    </button>
+    <div id="chatbot" class="chatbot-window" style="display: none;">
+        <div class="chatbot-header">
+            <img src="img/baner.png" alt="Bot Profile Picture" class="bot-profile-pic">
+            <span>Bot Kubnes</span>
+            <span class="close-chatbot">X</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <div class="chatbot-options">
+            <button class="option-btn" data-response="Co to jest autoexec i jak go używać?">Co to jest autoexec i jak go używać?</button>
+            <button class="option-btn" data-response="Co to jest config?">Co to jest config?</button>
+            <button class="option-btn" data-response="Jak mogę pobrać config do CS2?">Jak mogę pobrać config do CS2?</button>
+            <button class="option-btn" data-response="Pogubiłem się! Nie wiem gdzie co znaleźć">Pogubiłem się! Nie wiem gdzie co znaleźć</button>
+            <button class="option-btn" data-response="Gdzie mogę znaleźć więcej informacji?">Gdzie mogę znaleźć więcej informacji?</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-icons">
+        <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+        <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+        <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 kubnes.zsti.me. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script src="js/dot.js"></script>
+<script src="js/bot.js"></script>
+
+</body>
+</html>

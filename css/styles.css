@@ -1,0 +1,1057 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(23, 23, 31);
+    font-family: Arial, sans-serif;
+
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/* Header */
+header {
+    background-color: rgb(30, 30, 30);
+    color: #FFF;
+    font-size: large;
+    padding: 20px 0;
+    position: fixed;
+    height:20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 5%;
+    z-index: 999;
+    text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: background-color 0.4s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #DF9A04;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/* FOOTER I IKONKI SOCIAL MEDIA W FOOTERZE */
+
+
+footer {
+    background-color: black;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 300px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+
+.footer-icons a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-icons a:hover {
+    color: #FFA500;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*WYSUWANE SUBMENU*/
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 250px;
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Cień */
+    z-index: 999; /* Umiejscowienie nad innymi elementami */
+    border-radius:15px;
+}
+
+.submenu li {
+    margin: 1px 0;
+    width: 100%;
+    height: auto;
+        border-radius:15px;
+}
+
+.submenu li:hover {
+    background-color: #555;
+
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+        border-radius:15px;
+}
+
+nav ul li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Wyśrodkowanie elementów */
+
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ŁADNA STRZAŁKA OBOK SUBMENU*/
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 9px;
+    margin-bottom: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+
+.logo img {
+    box-shadow:2px 2px 6px white;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*OKIENKO DO WYSZUKIWANIA ALA CTRL + F*/
+#searchBox {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 50%;
+    transform: translate(100%,100%);
+    z-index: 999;
+    padding: 10px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#searchInput {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+}
+
+#searchBox button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchBox button:hover {
+    background-color: #777;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/*IKONKA DO WYSZUKIWANIA ALA CTRL + F*/
+
+.search-icon {
+    margin-left: auto;
+    position: relative;
+}
+
+.search-icon i {
+    cursor: pointer;
+}
+.search-icon a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.search-icon a:hover {
+    color: #FFA500;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/*ANIMACJA DO WYSZUKIWANIA ALA CTRL + F*/
+@keyframes slideIn {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 200px;
+    }
+}
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/*OKIENKO DO WYSZUKIWANIA ALA CTRL + F*/
+
+input[type="text"] {
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px; 
+    transition: width 0.4s;
+    animation: slideIn 0.4s;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*IKONKI SOCIAL MEDIA W MENU */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*LOGO*/
+.logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*DODATKOWE STYLE DLA OBRAZÓW */
+img {
+
+    height: 30%;
+    margin-left: 30px;
+    width:40%;
+    border-radius: 20px;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*OBRAZY W GALERII - SKINY*/
+
+.knife {
+    margin-top:40px;
+    width:35%;
+    height: auto;
+    margin-right:15px;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-right:20%;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ŁADNE LINIE MIĘDZY BLOKAMI*/
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+    position: relative;
+    margin-right: 10%;
+}
+
+hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: #DF9A04;
+}
+
+
+.highlighted {
+    color: #DF9A04;
+  }
+
+
+.download-link {
+    background-color:#DF9A04;
+    margin-left:15px;
+    padding: 15px;
+    border-radius:20px;
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: white; /* Kolor tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*PARAGRAFY I ZNACZNIKI GŁÓWNE*/
+
+
+.kodek p{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-bottom: 20px;
+    float: left;
+}
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.video p,
+.rekka p{
+    padding-top: 60px;
+    text-align:left;
+}
+
+
+h2{
+    padding-top: 60px;
+    text-align:left;
+    margin-left: 30px;
+}
+
+
+p{
+    margin-left: 30px;
+
+}
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*FILMIK*/
+
+.video{
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*TŁO*/
+
+.background {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 1%;
+    z-index: -1;
+}
+
+.left-background {
+    left: 0;
+    background-image: url('left-background.jpg');
+    background-size: cover;
+    width: 10%;
+}
+
+.right-background {
+    right: 0;
+    background-image: url('right-background.jpg');
+    background-size: cover;
+    width: 10%;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*HOVER DO POWIEKSZANIA ZDJEC W BLOKACH*/
+
+
+
+
+
+.block img:hover, 
+.block2 img:hover, 
+.gallery img:hover,
+.bindy1 img:hover,
+.bindy2 img:hover,
+.block3 img:hover,
+.block4 img:hover,
+.bindy3 img:hover,
+.bindy4 img:hover,
+.mapy img:hover,
+.bindy5 img:hover,
+.bindy5 img:hover
+{
+    transform: scale(1.1);
+        transition: transform 0.3s ease;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*KONTENT*/
+
+.content {
+    margin-left: 12%;
+    margin-right: 10%;
+    width: 80%;
+    padding: 25px;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ODSTEPY I WYGLAD BLOCKOW 1*/
+
+.reka1,
+.kupowanie1,
+.celowniki1,
+.skok1
+{
+    width: 90%;
+    height: 70%;
+    margin-bottom: 100px;
+    background-size: cover;
+    
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ODSTEPY I WYGLAD BLOCKOW 1*/
+.blocks,
+.mapy,
+.bindy{
+    border: 2px #3b3b3b solid;
+    background-color: #222222;
+    width: 91%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 40px;
+    padding-bottom: 5%;
+    border-radius: 15px;
+}
+
+.blocks hr,
+.mapy hr,
+.bindy hr{
+    margin-left: 1%;
+}
+
+.blocks img,
+.mapy img{
+    width: 80%;
+    
+}
+
+.bindy img{
+    width: 50%;
+    
+}
+
+
+.block,
+.block2,
+.block3,
+.block4,
+.mapy1,
+.mapy2,
+.mapy3,
+.mapy4{
+    width: calc(50% - 20px);
+    float: left;
+    padding: 0;
+    margin-top: 70px;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ODSTEPY I WYGLAD BLOCKOW 1*/
+
+
+.bindy img,
+.mapy img{
+    width: 80%;
+}
+
+.mapy3 img{
+    width:85%;
+}
+
+.mapy1,
+.mapy2,
+.mapy3,
+.mapy4{
+    width: calc(50% - 20px);
+    float: left;
+    padding: 0;
+}
+
+
+
+.bindy1,
+.bindy2,
+.bindy3,
+.bindy4,
+.bindy5,
+.bindy6{
+    width:30%;
+        float: left;
+    padding: 0;}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*GIFY W BINACH.HTML*/
+
+.reka2{
+    position: absolute;
+    width:80%;
+    height: 120%;
+    top:  1600px;
+    left: 45%;
+    margin-right: 15%;
+    float: right;
+}
+
+
+
+.kupowanie2{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  2900px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+.skok2{
+        position: absolute;
+    width:80%;
+    height: 120%;
+    margin-top: 300px;
+    top:  4700px;
+    left: 45%;
+    margin-right: 15%;
+    float: right;
+}
+
+.celowniki img {
+    height: 25%;
+    margin-left: 30px;
+    width:20%;
+    border-radius: 20px;
+}
+
+
+.zdjecie1{
+    position: absolute;
+    width:50%;
+    height: 100%;
+    top:  3730px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+.zdjecie2{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  3970px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+.zdjecie3{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  4210px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+.zdjecie4{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  4450px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+.zdjecie5{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  4690px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*BINDY1 I BINDY2 - ODNOSNIKI DO BINDOW*/
+
+
+.kodek2{
+        margin-top:70px;
+    margin-left:17%;
+    text-align: left;
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*KUPOWANIE I RECE - BLOCKI W BINDY.HTML*/
+
+.kupowanie,
+.rece,
+.celowniki,
+.jumpthrow{
+    padding-top: 60px;
+    text-align:left;
+    margin-left:13%;
+    margin-right:6%;
+}
+
+.rece{
+    margin-top:30%;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*IKONKI IKONKI Z BOKU STRONY */
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*IKONKI IKONKI Z BOKU STRONY */
+.sociale {
+    position: fixed;
+    top: 30%;
+    right: 2%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: right 0.3s ease;
+}
+
+.sociale div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px; 
+    padding: 5px;
+}
+
+.sociale div a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 20px;
+}
+
+.sociale div:hover {
+    border-color: #FFA500;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.twitch {
+    background-color: #9146ff;
+    border-color: #9146ff;
+}
+
+.steam {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.youtube {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.instagram {
+    background-color: #ff7e76;
+    border-color: #ff7e76;
+}
+
+/* Dodanie media queries dla responsywności */
+@media (max-width: 1200px) {
+    .sociale {
+        right: 1%;
+    }
+
+    .sociale div a {
+        width: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sociale {
+        right: 0;
+    }
+
+    .sociale div a {
+        width: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sociale {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .sociale div {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .sociale div a {
+        width: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sociale div a {
+        width: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sociale div a {
+        width: 20px;
+    }
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/* RESPONSYWNOSC STRONY */
+
+/* Dla mniejszych ekranów */
+@media only screen and (max-width: 768px) {
+    .video {
+        padding: 0 10px; /* Mniejszy padding poziomy */
+    }
+
+    .video iframe {
+        max-width: 90%; /* Maksymalna szerokość filmiku */
+        height: auto; /* Zachowanie proporcji */
+    }
+}
+
+
+/* Dla mniejszych ekranów */
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Elementy układają się w kolumnie */
+    }
+
+    .knife {
+        width: 100%; /* Obrazy skórek zajmują całą dostępną szerokość */
+        height: auto; /* Zachowaj proporcje obrazu */
+        margin-bottom: 10px; /* Dodaj odstęp między obrazami */
+    }
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*RESPONSYWNOŚĆ FOOTERA*/
+
+@media only screen and (max-width: 768px) {
+    footer {
+        height: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Dla mniejszych ekranów, ukryj tło i rozciągnij treść */
+@media only screen and (max-width: 768px) {
+    .background {
+        display: none;
+    }
+    
+    .content {
+        width: 100%; /* Rozciągnij treść na całą szerokość ekranu */
+        margin-left: 0; /* Usuń margines z lewej strony */
+        margin-right: 0; /* Usuń margines z prawej strony */
+    }
+    
+    /* Dodatkowe zmiany stylu, jeśli są potrzebne */
+    /* Możesz dostosować marginesy, paddingi i inne style, aby lepiej dopasować treść do szerokości ekranu */
+}
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed; /* Zamieniamy na fixed, aby przycisk był zawsze widoczny na górze strony */
+        top: 3px; /* Ustawiamy na 20px, aby był na samej górze strony */
+        right: 100px; /* Ustawiamy na 20px, aby był na prawej stronie */
+        background: #333; /* Dodajemy tło przyciskowi */
+        border: none;
+        font-size: 28px; /* Zwiększamy rozmiar czcionki */
+        color: #FFF;
+        cursor: pointer;
+        padding: 10px 20px; /* Dodajemy trochę wewnętrznego odstępu */
+        border-radius: 5px; /* Zaokrąglamy narożniki */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Dodajemy cień dla efektu 3D */
+        z-index: 999; /* Ustawiamy wysoki indeks zazębienia, aby był na wierzchu */
+    }
+}
+
+
+
+
+
+
+.active ul {
+    margin: 1px 0;
+    width:220px;
+    display: flex;
+    flex-direction: column;
+    left:-55px;
+    background-color:#555;
+    
+    
+}
+.active li a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+.kodek{
+    margin-top:200px;
+}
+
+
+.gallery-carousel {
+    margin-top:80px;
+    position: relative;
+    max-width: 600px; /* Ustalono maksymalną szerokość karuzeli */
+    margin: 20px auto; /* Wyśrodkowanie karuzeli */
+    margin-right:30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodanie cienia dla lepszego wyglądu */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Płynne przewijanie obrazów */
+}
+
+.carousel img {
+    width: 100%;
+    display: none; /* Ukrycie obrazów domyślnie */
+}
+
+.carousel img:first-child {
+    display: block; /* Wyświetlenie pierwszego obrazu */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Szerokość przycisku */
+    height: 40px; /* Wysokość przycisku */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%; /* Zaokrąglenie przycisków */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Rozmiar ikony */
+    transition: background-color 0.3s ease; /* Płynna zmiana koloru tła */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Zmiana koloru tła przy najechaniu */
+}
+
+.prev {
+    left: 40px; /* Odstęp od lewej krawędzi karuzeli */
+}
+
+.next {
+    right: 10px; /* Odstęp od prawej krawędzi karuzeli */
+}
+.thumbnails {
+    text-align: center;
+    margin-top: 10px;
+
+    white-space: nowrap; /* Prevent thumbnails from wrapping to the next line */
+    margin-left: 10px; /* Add left margin to prevent thumbnails from sticking to the left edge */
+}
+
+.thumb {
+    width: 100px; /* Default width for thumbnails */
+    height: auto;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    display: inline-block; /* Display thumbnails in a single row */
+    margin-right: 5px; /* Add some spacing between thumbnails */
+    margin-left:20px;
+}
+
+.thumb:last-child {
+    margin-right: 0; /* Remove margin from the last thumbnail to avoid extra spacing */
+}
+
+.thumb:hover {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .thumb {
+        width: 80px; /* Adjust thumbnail size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .thumb {
+        width: 60px; /* Further adjust thumbnail size for very small screens */
+    }
+}
+
+
+/* Banner styles */
+.banner-container {
+    overflow: hidden;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.banner-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-top: 40px;
+    max-width: 100%; /* Ogranicz szerokość banera do 100% */
+
+}
+
+.banner-slide {
+    display: flex;
+    width: auto; /* Ustaw szerokość na 100% */
+    
+}
+
+.banner-slide img {
+    flex: 1;
+    width: 15%;
+    height: auto;
+    margin-right: 1px; /* Dodaj margines po prawej stronie obrazka */
+    margin-left: 1px;
+    border-radius: 0px;
+}
+
+.banner-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+
+/* Responsywność */
+@media only screen and (max-width: 768px) {
+    .banner-slide img {
+        width: 10%; /* Dostosuj szerokość obrazków dla mniejszych ekranów */
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .banner-container {
+        margin-left: 0%;
+        margin-right: 0%; /* Dostosuj marginesy dla jeszcze mniejszych ekranów */
+    }
+    .banner-slide img {
+        width: 40%; /* Dostosuj szerokość obrazków dla bardzo małych ekranów */
+    }
+}
+
+
+
+
+
+.progress-bar-container {
+
+    width: 80%;
+    height: 5px;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 35px;
+    z-index: 999;
+    position: fixed;
+    
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #DF9A04;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+

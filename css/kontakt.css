@@ -1,0 +1,1718 @@
+html, body {
+    height: 100%; /* Ustala pełną wysokość dla html i body */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    height:100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #111111;
+    font-family: Arial, sans-serif;
+
+}
+.social-icons {
+    display: flex;
+
+    align-items: center;    /* Wyśrodkowanie ikon w poziomie */
+    position: fixed;        /* Ustawienie pozycji na stałe */
+    left:80%;               /* Przesunięcie do prawej krawędzi */
+    top: 4%;               /* Wyśrodkowanie w pionie */
+    transform: translateY(-50%); /* Wyśrodkowanie w pionie w odniesieniu do top: 50% */
+    z-index: 999;           /* Zapewnienie, że ikony są nad innymi elementami */
+}
+
+
+/* Scrollbar customization */
+* ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+* ::-webkit-scrollbar-track {
+    background: #333; /* Track color */
+}
+
+* ::-webkit-scrollbar-thumb {
+    background: #DF9A04; /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+    background: #f8c06e; /* Color when hovered */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;   /* Odstęp między ikonami */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;         /* Dodanie wewnętrznego marginesu */
+    border-radius: 50%;    /* Zaokrąglenie ikon */
+    transition: color 0.3s ease; /* Gładkie przejście koloru */
+}
+
+.social-icons a:hover {
+    color: #DF9A04;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/* Header */
+header {
+    background-color: rgb(30, 30, 30);
+    color: #FFF;
+    font-size: large;
+    padding: 20px 0;
+    position: fixed;
+    height:20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 5%;
+    z-index: 999;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header .img {
+    height: 30%;
+    margin-left: 30px;
+    width: 40%;
+    border-radius: 20px;
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: background-color 0.4s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #DF9A04;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/* FOOTER I IKONKI SOCIAL MEDIA W FOOTERZE */
+
+
+footer {
+    background-color: black;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    margin-top: 300px;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+
+.footer-icons a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-icons a:hover {
+    color: #FFA500;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*WYSUWANE SUBMENU*/
+
+.submenu {
+    
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    margin-top: 18px;
+    overflow: hidden;
+}
+
+.submenu li {
+    width: 100%;
+    height: auto;
+}
+
+/* Usuwamy zaokrąglenie z góry */
+.submenu li:first-child a {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height:30px;
+    text-align:center;
+    padding-top:20px;
+    
+}
+
+/* Tylko dół zostaje zaokrąglony */
+.submenu li:last-child a {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.submenu li:hover a {
+    background-color: #555;
+}
+
+nav ul li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ŁADNA STRZAŁKA OBOK SUBMENU*/
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 9px;
+    margin-bottom: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+
+.logo img {
+    border: 2px solid #DF9A04;
+    box-shadow: 0 0 10px #ffcc00;
+    height: 50%;
+    margin-left: 30px;
+    width: 50%;
+    position: relative;
+    top: -5px;
+
+    
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*IKONKI SOCIAL MEDIA W MENU */
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*LOGO*/
+.logo {
+    padding-bottom: 50px;
+    margin-right: 20px;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*DODATKOWE STYLE DLA OBRAZÓW */
+img {
+
+    height: 25%;
+
+    width:40%;
+    border-radius: 20px;
+}
+
+.zoomable-image img{
+        height: 25%;
+    margin-left: 30px;
+    width:40%;
+    border-radius: 20px;
+    
+}
+  .gallery img {
+    
+
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width:27%;
+    border-radius: 20px;
+    margin-right:1%;
+  }
+  
+  
+  .lb-image {
+  max-width: 70vw !important; /* 90% szerokości okna przeglądarki */
+  max-height: 70vh !important; /* 90% wysokości okna przeglądarki */
+  width: auto !important;
+  height: auto !important;
+}
+
+
+.lb-outerContainer {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lb-container {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*OBRAZY W GALERII - SKINY*/
+
+.knife {
+    margin-top:40px;
+    width:35%;
+    height: auto;
+    margin-right:15px;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-right:20%;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ŁADNE LINIE MIĘDZY BLOKAMI*/
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+    position: relative;
+    margin-right: 10%;
+}
+
+hr::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: #DF9A04;
+}
+
+
+.highlighted {
+    color: #DF9A04;
+  }
+
+
+.download-link {
+    background-color:#DF9A04;
+    margin-left:15px;
+    padding: 15px;
+    border-radius:20px;
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: white; /* Kolor tekstu */
+    font-weight: bold; /* Pogrubienie tekstu */
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*PARAGRAFY I ZNACZNIKI GŁÓWNE*/
+
+
+.kodek p{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-bottom: 20px;
+    float: left;
+}
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.rekka p{
+    padding-top: 60px;
+    text-align:left;
+}
+
+
+h2{
+    padding-top: 60px;
+    text-align:left;
+    margin-left: 30px;
+}
+
+
+p{
+    margin-left: 30px;
+
+}
+
+.video {
+    max-width: 100%; /* Upewnij się, że kontener nie wychodzi poza szerokość strony */
+    margin: 20px auto; /* Wyśrodkowanie kontenera */
+    padding: 20px; /* Dodanie przestrzeni wewnętrznej */
+    border-radius: 15px; /* Zaokrąglenie narożników */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Dodanie cienia */
+    background-color: #222222;; /* Tło kontenera */
+    text-align: center; /* Wyśrodkowanie treści */
+    margin-right: 13%;
+    margin-left:5%;
+}
+
+.video hr{
+    margin-left: 3%;
+}
+
+
+.video p {
+    color: #eee; /* Kolor tekstu */
+    font-size: 16px; /* Rozmiar czcionki */
+    margin-bottom: 20px; /* Odstęp poniżej tekstu */
+}
+
+iframe {
+    border-radius: 10px; /* Zaokrąglenie narożników iframe */
+    border: 0; /* Usunięcie obramowania */
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*FILMIK*/
+
+.video{
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*TŁO*/
+
+.background {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 1%;
+    z-index: -1;
+}
+
+.left-background {
+    left: 0;
+    background-image: url('left-background.jpg');
+    background-size: cover;
+    width: 10%;
+}
+
+.right-background {
+    right: 0;
+    background-image: url('right-background.jpg');
+    background-size: cover;
+    width: 10%;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*HOVER DO POWIEKSZANIA ZDJEC W BLOKACH*/
+
+
+
+
+
+.block img:hover, 
+.block2 img:hover, 
+.gallery img:hover,
+.bindy1 img:hover,
+.bindy2 img:hover,
+.block3 img:hover,
+.block4 img:hover,
+.bindy3 img:hover,
+.bindy4 img:hover,
+.mapy img:hover,
+.bindy5 img:hover,
+.bindy5 img:hover
+{
+    transform: scale(1.1);
+        transition: transform 0.3s ease;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*KONTENT*/
+
+.content {
+    margin-left: 12%;
+    margin-right: 10%;
+    width: 80%;
+    padding: 25px;
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ODSTEPY I WYGLAD BLOCKOW 1*/
+
+.reka1,
+.kupowanie1,
+.celowniki1,
+.skok1
+{
+    width: 90%;
+    height: 70%;
+    margin-bottom: 100px;
+    background-size: cover;
+    
+}
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ODSTEPY I WYGLAD BLOCKOW 1*/
+.blocks,
+.mapy,
+.bindy{
+    border: 2px #3b3b3b solid;
+    background-color: #222222;
+    width: 91%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 100px;
+    padding-bottom: 5%;
+    border-radius: 15px;
+}
+
+.block,
+.block3,
+.mapy1,
+.mapy3,
+.bindy1,
+.bindy4{
+    margin-left:40px;
+}
+
+.blocks hr,
+.mapy hr,
+.bindy hr{
+    margin-left: 1%;
+}
+
+.blocks img,
+.mapy img{
+    width: 80%;
+    
+}
+
+.bindy img{
+    width: 50%;
+    
+}
+
+
+.block,
+.block2,
+.block3,
+.block4,
+.mapy1,
+.mapy2,
+.mapy3,
+.mapy4{
+    width: calc(50% - 20px);
+    float: left;
+    padding: 0;
+    margin-top: 70px;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*ODSTEPY I WYGLAD BLOCKOW 1*/
+
+
+.bindy img,
+.mapy img{
+    width: 80%;
+}
+
+.mapy3 img{
+    width:85%;
+}
+
+.mapy1,
+.mapy2,
+.mapy3,
+.mapy4{
+    width: calc(50% - 20px);
+    float: left;
+    padding: 0;
+}
+
+
+
+.bindy1,
+.bindy2,
+.bindy3,
+.bindy4,
+.bindy5,
+.bindy6{
+    width:30%;
+        float: left;
+    padding: 0;}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*GIFY W BINACH.HTML*/
+
+.reka2{
+    position: absolute;
+    width:80%;
+    height: 120%;
+    top:  1700px;
+    left: 45%;
+    margin-right: 15%;
+    float: right;
+}
+
+
+
+.kupowanie2{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  3100px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+.skok2{
+        position: absolute;
+    width:80%;
+    height: 120%;
+    margin-top: 300px;
+    top:  4800px;
+    left: 45%;
+    margin-right: 15%;
+    float: right;
+}
+
+.celowniki img {
+    height: 25%;
+    margin-left: 30px;
+    width:20%;
+    border-radius: 20px;
+}
+
+
+.zdjecie1{
+    position: absolute;
+    width:50%;
+    height: 100%;
+    top:  3730px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+.zdjecie2{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  3970px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+.zdjecie3{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  4210px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+.zdjecie4{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  4450px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+
+.zdjecie5{
+    position: absolute;
+    width:70%;
+    height: 100%;
+    top:  4690px;
+    left: 50%;
+    margin-right: 15%;
+    float: right;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*BINDY1 I BINDY2 - ODNOSNIKI DO BINDOW*/
+
+
+.kodek2{
+        margin-top:70px;
+    margin-left:17%;
+    text-align: left;
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*KUPOWANIE I RECE - BLOCKI W BINDY.HTML*/
+
+.kupowanie,
+.rece,
+.celowniki,
+.jumpthrow{
+    padding-top: 60px;
+    text-align:left;
+    margin-left:13%;
+    margin-right:6%;
+}
+
+.rece{
+    margin-top:30%;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*IKONKI IKONKI Z BOKU STRONY */
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*IKONKI IKONKI Z BOKU STRONY */
+.sociale {
+    position: fixed;
+    top: 30%;
+    right: 2%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: right 0.3s ease;
+}
+
+.sociale div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px; 
+    padding: 5px;
+}
+
+.sociale div a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 20px;
+}
+
+.sociale div:hover {
+    border-color: #FFA500;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.twitch {
+    background-color: #9146ff;
+    border-color: #9146ff;
+}
+
+.steam {
+    background-color: #0066cc;
+    border-color: #0066cc;
+}
+
+.youtube {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.instagram {
+    background-color: #ff7e76;
+    border-color: #ff7e76;
+}
+
+/* Dodanie media queries dla responsywności */
+@media (max-width: 1200px) {
+    .sociale {
+        right: 1%;
+    }
+
+    .sociale div a {
+        width: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sociale {
+        right: 0;
+    }
+
+    .sociale div a {
+        width: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sociale {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .sociale div {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .sociale div a {
+        width: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sociale div a {
+        width: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sociale div a {
+        width: 20px;
+    }
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/* RESPONSYWNOSC STRONY */
+
+/* Dla mniejszych ekranów */
+@media only screen and (max-width: 768px) {
+    .video {
+        padding: 0 10px; /* Mniejszy padding poziomy */
+    }
+
+    .video iframe {
+        max-width: 90%; /* Maksymalna szerokość filmiku */
+        height: auto; /* Zachowanie proporcji */
+    }
+}
+
+
+/* Dla mniejszych ekranów */
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Elementy układają się w kolumnie */
+    }
+
+    .knife {
+        width: 100%; /* Obrazy skórek zajmują całą dostępną szerokość */
+        height: auto; /* Zachowaj proporcje obrazu */
+        margin-bottom: 10px; /* Dodaj odstęp między obrazami */
+    }
+}
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+/*RESPONSYWNOŚĆ FOOTERA*/
+
+@media only screen and (max-width: 768px) {
+    footer {
+        height: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* Dla mniejszych ekranów, ukryj tło i rozciągnij treść */
+@media only screen and (max-width: 768px) {
+    .background {
+        display: none;
+    }
+    
+    .content {
+        width: 100%; /* Rozciągnij treść na całą szerokość ekranu */
+        margin-left: 0; /* Usuń margines z lewej strony */
+        margin-right: 0; /* Usuń margines z prawej strony */
+    }
+    
+    /* Dodatkowe zmiany stylu, jeśli są potrzebne */
+    /* Możesz dostosować marginesy, paddingi i inne style, aby lepiej dopasować treść do szerokości ekranu */
+}
+
+
+
+
+
+/* Przycisk burgera */
+.menu-toggle {
+    display: none; /* Domyślnie ukryty */
+}
+
+@media (max-width: 900px) {
+    nav ul {
+        display: none; /* Ukrywanie menu w widoku mobilnym */
+    }
+
+    .menu-toggle {
+        display: block; /* Pokazuje przycisk burgera na mniejszych ekranach */
+        position: fixed;
+        top: 10px; /* Ustaw wysokość przycisku */
+        right: 10px; /* Ustaw położenie przycisku */
+        background: #333;
+        border: none;
+        font-size: 28px;
+        color: #FFF;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+    }
+
+    .menu-toggle.open {
+        background: #555;
+    }
+
+    .active ul {
+        display: block; /* Pokazuje menu po kliknięciu przycisku burgera */
+        position: absolute;
+        top: 60px; /* Ustaw położenie menu */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        
+    }
+}
+
+
+
+
+
+
+.active ul {
+    margin: 1px 0;
+    width:220px;
+    display: flex;
+    flex-direction: column;
+    left:-55px;
+    background-color:#555;
+    
+    
+}
+.active li a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+.kodek{
+    margin-top:200px;
+}
+
+
+.gallery-carousel {
+    margin-top:80px;
+    position: relative;
+    max-width: 600px; /* Ustalono maksymalną szerokość karuzeli */
+    margin: 20px auto; /* Wyśrodkowanie karuzeli */
+    margin-right:30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Dodanie cienia dla lepszego wyglądu */
+    border-radius: 10px; /* Zaokrąglenie rogów */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Płynne przewijanie obrazów */
+}
+
+.carousel img {
+    width: 100%;
+    display: none; /* Ukrycie obrazów domyślnie */
+}
+
+.carousel img:first-child {
+    display: block; /* Wyświetlenie pierwszego obrazu */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Szerokość przycisku */
+    height: 40px; /* Wysokość przycisku */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%; /* Zaokrąglenie przycisków */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px; /* Rozmiar ikony */
+    transition: background-color 0.3s ease; /* Płynna zmiana koloru tła */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Zmiana koloru tła przy najechaniu */
+}
+
+.prev {
+    left: 40px; /* Odstęp od lewej krawędzi karuzeli */
+}
+
+.next {
+    right: 10px; /* Odstęp od prawej krawędzi karuzeli */
+}
+.thumbnails {
+    text-align: center;
+    margin-top: 10px;
+
+    white-space: nowrap; /* Prevent thumbnails from wrapping to the next line */
+    margin-left: 10px; /* Add left margin to prevent thumbnails from sticking to the left edge */
+}
+
+.thumb {
+    width: 100px; /* Default width for thumbnails */
+    height: auto;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    display: inline-block; /* Display thumbnails in a single row */
+    margin-right: 5px; /* Add some spacing between thumbnails */
+    margin-left:20px;
+} 
+
+.thumb:last-child {
+    margin-right: 0; /* Remove margin from the last thumbnail to avoid extra spacing */
+}
+
+.thumb:hover {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .thumb {
+        width: 80px; /* Adjust thumbnail size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .thumb {
+        width: 60px; /* Further adjust thumbnail size for very small screens */
+    }
+}
+
+
+/* Banner styles */
+.banner-container {
+    overflow: hidden;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.banner-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-top: 40px;
+    max-width: 100%; /* Ogranicz szerokość banera do 100% */
+
+}
+
+.banner-slide {
+    display: flex;
+    width: auto; /* Ustaw szerokość na 100% */
+    
+}
+
+.banner-slide img {
+    flex: 1;
+    width: 15%;
+    height: auto;
+    margin-right: 1px; /* Dodaj margines po prawej stronie obrazka */
+    margin-left: 1px;
+    border-radius: 0px;
+}
+
+.banner-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+
+/* Responsywność */
+@media only screen and (max-width: 768px) {
+    .banner-slide img {
+        width: 10%; /* Dostosuj szerokość obrazków dla mniejszych ekranów */
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .banner-container {
+        margin-left: 0%;
+        margin-right: 0%; /* Dostosuj marginesy dla jeszcze mniejszych ekranów */
+    }
+    .banner-slide img {
+        width: 40%; /* Dostosuj szerokość obrazków dla bardzo małych ekranów */
+    }
+}
+
+
+
+
+
+.progress-bar-container {
+
+    width: 80%;
+    height: 5px;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 40px;
+    z-index: 999;
+    position: fixed;
+    
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #DF9A04;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Kontener pokazu slajdów */
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ukrycie slajdów domyślnie */
+.mySlides {
+  display: none;
+  text-align: center;
+}
+
+.mySlides img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Przycisk poprzedni i następny */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Pozycjonowanie przycisku "następny" po prawej stronie */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Efekt hover dla przycisków */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Numer slajdu (1/3 itd.) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Kontener podpisu */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+.faq-section {
+        border: 2px #3b3b3b solid;
+    background-color: #222222;
+    margin-top: 50px; /* Dodaje odstęp nad sekcją FAQ */
+    padding: 30px;    /* Dodaje wewnętrzny odstęp do sekcji */
+    border-radius: 15px;  /* Zaokrąglone rogi */
+    color: white;
+    margin-right: 15%;
+    margin-left:15%;
+}
+
+
+
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #DF9A04;
+}
+
+.accordion {
+    max-width: 800px; /* Maksymalna szerokość akordeonu */
+    margin: 0 auto; /* Wyśrodkowanie akordeonu */
+}
+
+.accordion-item {
+    border: 1px solid #555; /* Obramowanie każdego elementu */
+    margin-bottom: 10px; /* Odstęp między elementami */
+    border-radius: 5px;
+    overflow: hidden; /* Ukrycie wystającej treści */
+}
+
+.accordion-button {
+    background-color: #444; /* Kolor tła przycisku */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    text-align: left;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: background-color 0.2s ease; /* Płynne przejście koloru tła */
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-button:hover {
+    background-color: #555;
+    color: #DF9A04;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none; /* Ukrycie treści domyślnie */
+    background-color: #555; /* Kolor tła dla treści akordeonu */
+    color: white;
+    border-top: 1px solid #444;
+}
+
+.accordion-content p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.accordion-button:after {
+    content: '\25BC'; /* Symbol strzałki w dół */
+    font-size: 1em;
+    transition: transform 0.2s ease;
+}
+
+.accordion-button.active:after {
+    transform: rotate(180deg); /* Obrócenie strzałki o 180 stopni */
+}
+
+
+
+/* Stylizacja Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Początkowo ukryty */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: left;
+    color: white;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #DF9A04;
+}
+
+#show-popup-btn {
+    margin: 50px auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #DF9A04;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#show-popup-btn:hover {
+    background-color: #FFA500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chatbot Styles */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+
+}
+
+/* Chatbot Button Styles */
+#chatbot-btn {
+    background-color: #DF9A04;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Wyśrodkowanie pionowe */
+    justify-content: center; /* Wyśrodkowanie poziome */
+    font-size: 18px;
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+.bot-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px; /* Odstęp między zdjęciem a tekstem */
+}
+
+#chatbot-btn span {
+    display: inline-block; /* Utrzymanie w jednej linii z obrazem */
+}
+
+
+.chatbot-window {
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+}
+
+.chatbot-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.close-chatbot {
+    cursor: pointer;
+    font-size: 18px;
+    color: #DF9A04;
+    margin-left: auto;
+}
+
+.chatbot-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Scrollbar customization */
+.chatbot-messages::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+    background: #333; /* Track color */
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background: #DF9A04; /* Scrollbar color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb:hover {
+    background: #f8c06e; /* Color when hovered */
+}
+
+/* For Firefox */
+.chatbot-messages {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: #DF9A04 #333; /* Scrollbar color and track color */
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 60%; /* Ensure message does not take full width */
+    line-height: 1.5;
+    position: relative;
+}
+
+.user-message {
+    background-color: #666;
+    color: white;
+    align-self: flex-end; /* Align user messages to the right */
+    margin-left: auto;
+}
+
+.bot-message {
+    background-color: #333;
+    color: white;
+    align-self: flex-start; /* Align bot messages to the left */
+    margin-right: auto;
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards; /* Fade-in effect */
+}
+
+.message p {
+    margin: 0;
+}
+
+/* Loading dots animation */
+.loading-dots {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #DF9A04;
+    margin-top: 10px;
+}
+
+.loading-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #DF9A04;
+    margin: 0 2px;
+    animation: dot-blink 1.5s infinite;
+}
+
+.loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes dot-blink {
+    0%, 20%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Smooth Transition for Bot Response */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 50%;
+    right: 150px;
+    background-color: #DF9A04;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    z-index: 10001;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Chatbot Options */
+.chatbot-options {
+    margin-top: 10px;
+}
+
+.option-btn {
+    background-color: #DF9A04;
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Adjusted padding for smaller button size */
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    width: calc(100% - 20px); /* Ensure button fits within the container */
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.option-btn:hover {
+    background-color: #f8c06e;
+}
+
+.option-btn:active {
+    background-color: #e89a05;
+}
+
+
+
+
+
+
+
+
+/* Spis Treści */
+.table-of-contents {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px; /* Większy odstęp od góry */
+    margin-bottom: 100px; /* Większy odstęp od dołu */
+    padding: 20px;
+    max-width: 700px; /* Powiększona szerokość bloku */
+    border: 2px solid #3b3b3b; /* Ciemnoszary brzeg */
+    background-color: #222222; /* Ciemne tło */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Cień dla lepszego efektu */
+}
+
+.table-of-contents h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Większy rozmiar czcionki nagłówka */
+    color: #FFFFFF; /* Biały kolor tekstu */
+    text-align: center;
+    border-bottom: 3px solid #DF9A04; /* Kolor linii pod nagłówkiem */
+    padding-bottom: 10px;
+}
+
+.table-of-contents a {
+    display: block; /* Sprawia, że linki zajmują całą szerokość kontenera */
+    text-decoration: none;
+    color: #FFFFFF; /* Biały kolor linków */
+    font-size: 1.1em; /* Większa czcionka dla linków */
+    padding: 10px;
+    background-color: #333333; /* Tło dla linków */
+    border-radius: 4px; /* Zaokrąglenie rogów linków */
+    transition: background-color 0.3s, color 0.3s; /* Płynne przejścia dla kolorów */
+    margin-bottom: 10px; /* Przestrzeń między linkami */
+}
+
+.table-of-contents a:hover {
+    background-color: #444444; /* Tło linku przy najechaniu */
+    color: #DF9A04; /* Kolor linku przy najechaniu */
+    text-decoration: underline; /* Podkreślenie linku przy najechaniu */
+}
+

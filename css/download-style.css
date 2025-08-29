@@ -1,0 +1,14 @@
+  .download-link {
+        background-color: #DF9A04;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        transition: background-color 0.3s;
+    }
+
+    .download-link:hover {
+        background-color: #FFB800;
+    }

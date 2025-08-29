@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Bindy i przydatne komendy do Counter Strike 2 - qbnez config, skins and clips, qbnez, kubnes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="icon" type="image/png" href="img/baner.png">
+    <link rel="stylesheet" href="css/cos.css">
+    <link rel="stylesheet" href="css/kula.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="description" content="Bindy i przydatne komendy do Counter Strike 2 - qbnez config, skins and clips">
+
+
+</head>
+
+<body>
+
+
+<header>
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/baner.png" alt="Logo">
+        </a>
+    </div>
+    <nav>
+        <div class="menu">
+            <ul>
+                <li class="active"><a href="index.html">Strona główna</a></li>
+                <li><a href="bindy.html">Poradniki</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="lineup.html">Granaty</a></li>
+                <li class="has-submenu"><a href="#">qbnez <i class="arrow down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="config.html">Mój config</a></li>
+                        <li><a href="trening.html">Config Treningowy</a></li>
+                    </ul>
+                </li>
+                <div class="social-icons">
+                    <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+                    <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+
+<div class="ball"></div>
+<div class="cursor-dot"></div>
+<button class="menu-toggle">☰</button> 
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.has-submenu > a');
+    const submenuItems = document.querySelectorAll('.has-submenu');
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault(); // Zapobiega przeładowaniu strony
+            
+            // Ukrywa inne submenu
+            submenuItems.forEach(menuItem => {
+                if (menuItem !== this.parentElement) {
+                    menuItem.classList.remove('active');
+                }
+            });
+
+            // Przełącza widoczność submenu dla klikniętego elementu
+            this.parentElement.classList.toggle('active');
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        // Sprawdza, czy kliknięcie miało miejsce poza menu
+        if (!e.target.closest('.has-submenu') && !e.target.closest('.menu-item')) {
+            submenuItems.forEach(menuItem => {
+                menuItem.classList.remove('active');
+            });
+        }
+    });
+});
+</script>
+
+
+<div class="background left-background"></div>
+<div class="background right-background"></div>
+
+<div class="content">
+    <div class="blocks">
+        <h2>Najnowsze <span class="highlighted">Wpisy</span></h2>
+        <hr>
+        
+        <div class="block">
+            <p>Gotowy config do wgrania</p>
+            <a href="config.html">
+                <img class="zoomable-image" src="img/m4.jpg" alt="Config">
+            </a>
+
+        </div>
+
+        <div class="block2">
+            <p>Gotowy config do treningów</p>
+
+            <a href="trening.html">
+                <img class="zoomable-image" src="img/smoke.jpg" alt="Config Treningowy">
+            </a>
+
+        </div>
+        <div class="block3">
+            <p>Bind na zmianę ręki</p>
+            <img class="zoomable-image" src="img/switch.jpg" alt="Bind" onclick="scrollToElementOnAnotherPage('bindy.html', '.rece');">
+
+        </div>
+        <div class="block4">
+            <p>Bindy na kupowanie</p>
+            <img class="zoomable-image" src="img/kupowanie.jpg" alt="Bind" onclick="scrollToElementOnAnotherPage('bindy.html', '.kupowanie');">
+
+        </div>
+        
+    </div>
+
+    <div class="video">
+        <h2>Filmik <span class="highlighted">YouTube</span></h2>
+        <hr>
+        <p>Krótka kompilacja moich fragów</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/ggdeqK25_pM?si=OZ5E7BUVs0Icyq0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+<h2>Galeria <span class="highlighted">Skinów</span></h2>
+<hr>
+<div class="gallery">
+  <a href="img/photo1.jpg" data-lightbox="mygallery"><img src="img/photo1.jpg" alt="Knife 1"></a>
+  <a href="img/photo2.jpg" data-lightbox="mygallery"><img src="img/photo2.jpg" alt="Knife 2"></a>
+  <a href="img/photo3.jpg" data-lightbox="mygallery"><img src="img/photo3.jpg" alt="Knife 3"></a>
+  <a href="img/huntsman.jpg" data-lightbox="mygallery"><img src="img/huntsman.jpg" alt="Knife 4"></a>
+  <a href="img/stiletto.jpg" data-lightbox="mygallery"><img src="img/stiletto.jpg" alt="Knife 5"></a>  
+  <a href="img/bayonet.jpg" data-lightbox="mygallery"><img src="img/bayonet.jpg" alt="Knife 6"></a>   
+  <a href="img/skeleton.jpg" data-lightbox="mygallery"><img src="img/skeleton.jpg" alt="Knife 7"></a>  
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+</div>
+
+
+
+    <!-- Popup Notification -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Moje sociale: </h2>
+            <p>Znajdziesz mnie na Twitchu: KUBNES_ 
+            <br>
+            Mój profil steam: qbnez
+            <br>
+            Mój kanał YouTube: qbnez
+            <br>
+            Mój Instagram: Kubnes1
+
+</p>
+        </div>
+    </div>
+
+   <!-- <button id="show-popup-btn">Sociale</button>-->
+    
+    
+    
+    
+
+<!-- FAQ Section -->
+<div class="faq-section">
+    <h2 class="faq-title">Często zadawane pytania</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-button">Gdzie znajdę swój config?</button>
+            <div class="accordion-content">
+                <p>Swój config znajdziesz pod ścieżką:<br> C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg <br> Lub przez Steam'a wchodząc w biblioteke gier następnie klikając prawym przyciskiem myszy na Counter:Strike -> Właściwości -> Zainstalowane pliki -> Przeglądaj. W otwartym ekspolatorze plików należy wejśc do folderu "csgo" następnie "cfg". Nasz config będzie znajdował się pod nazwą "autoexec.cfg"</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">Jak mogę edytować swój config?</button>
+            <div class="accordion-content">
+                <p>Aby edytować swój config należy go znaleźć, a następnie wystarczy go otworzyć lub wrzucić już gotowy config o takiej samej nazwie do foldera, w którym znajduje się aktualny config</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button">Czy znajdę gdzieś gotowy config?</button>
+            <div class="accordion-content">
+                <p>Tak, gotowy config treningowy oraz casualowy można znaleźć w zakładce "qbnez".</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div id="chatbot-container">
+    <button id="chatbot-btn">
+        <img src="img/baner.png" alt="Bot Profile Picture" class="bot-profile-pic">
+        Bot Kubnes
+    </button>
+    <div id="chatbot" class="chatbot-window" style="display: none;">
+        <div class="chatbot-header">
+            <img src="img/baner.png" alt="Bot Profile Picture" class="bot-profile-pic">
+            <span>Bot Kubnes</span>
+            <span class="close-chatbot">X</span>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+        </div>
+        <div class="chatbot-options">
+            <button class="option-btn" data-response="Co to jest autoexec i jak go używać?">Co to jest autoexec i jak go używać?</button>
+            <button class="option-btn" data-response="Co to jest config?">Co to jest config?</button>
+            <button class="option-btn" data-response="Jak mogę pobrać config do CS2?">Jak mogę pobrać config do CS2?</button>
+            <button class="option-btn" data-response="Pogubiłem się! Nie wiem gdzie co znaleźć">Pogubiłem się! Nie wiem gdzie co znaleźć</button>
+            <button class="option-btn" data-response="Gdzie mogę znaleźć więcej informacji?">Gdzie mogę znaleźć więcej informacji?</button>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-icons">
+        <a href="https://www.twitch.tv/kubnes_" target="_blank"><i class="fab fa-twitch"></i></a>
+        <a href="https://steamcommunity.com/profiles/76561198977240779/" target="_blank"><i class="fab fa-steam"></i></a>
+        <a href="https://www.youtube.com/channel/UC7VIzU8oTKJvpbt-9_AQ4YA" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="www.instagram.com/kubnes1" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 kubnes.zsti.me. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+
+
+
+<script src="js/script.js"></script>
+<script src="js/skipek.js"></script>
+<script src="js/skipek2.js"></script>
+<script src="js/placek.js"></script>
+<script src="js/galeria.js"></script>
+<script src="js/bar.js"></script>
+<script src="js/dot.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/pop.js"></script>
+<script src="js/bot.js"></script>
+
+
+
+
+</body>
+</html>

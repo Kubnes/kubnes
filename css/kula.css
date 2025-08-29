@@ -1,0 +1,41 @@
+body {
+    
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.ball, .cursor-dot {
+  position: fixed; /* Trzymamy je w stałej pozycji na ekranie */
+  pointer-events: none; /* Nie blokują interakcji z innymi elementami */
+}
+
+.ball {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid #DF9A04;
+  border-radius: 50%;
+  transition: transform 0.1s ease-out;
+  z-index: 9999; /* Ustawiamy z-index wysoki, aby być na wierzchu */
+  transform: translate(-50%, -50%);
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #DF9A04;
+  border-radius: 50%;
+  z-index: 10000; /* Kropka powinna być nad wszystkimi innymi */
+  transform: translate(-50%, -50%);
+}
+.ball, .cursor-dot {
+  position: fixed; /* lub absolute, w zależności od struktury */
+  pointer-events: none;
+  z-index: 10000; /* Ustaw wysoką wartość, aby były na wierzchu */
+}
+
+
+
